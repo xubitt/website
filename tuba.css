@@ -1,6 +1,8 @@
-body {margin:0;}
+.genel { width: 100%; height: auto; background-color: #717171;}
 
-ul {
+body {margin:0; background-color: #717171;}
+
+#ustcizgi {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ ul {
   width: 100%;
 }
 
-li {
+#li2 {
   float: left;
 }
 
@@ -32,3 +34,54 @@ li a:hover:not(.active1) {
 }
 
 body {font-family: Verdana, sans-serif;}
+
+#profil{
+  border-radius: 50%;
+  border: salmon dotted 5px;
+  width: 420px;
+  height: 420px;
+}
+
+.sol {float: left; margin-left: 50px;}
+.sağ {float: right; margin-right: 200px; }
+#baslik {font-size: 45px;}
+#yazi {font-size: 18px ;}
+
+
+td{
+  text-align: center;
+}
+
+ul{
+  text-align: left;
+}
+
+
+
+
+
+#liste{
+  list-style-type: none;
+  text-align: center;
+  
+}
+  
+.logo{
+  width: 26px;
+  height: 26px;
+}
+
+.table {position: absolute ;
+  top: 1300px; 
+  margin-left: 500px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  padding:15px;
+
+}
