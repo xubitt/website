@@ -1,106 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="tuba.css">
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="tuba.css">
 
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 95%;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color:salmon;
-  font-size: 41px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
-
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-</style>
 </head>
 <body>
-
-    <div class="genel">
-
-    <ul id="ustcizgi">
-        <li id="li2"><a class="active1" href="index.html">Ana Sayfa</a></li>
-        <li id="li2"><a href="#hakkimda">Hakkımda</a></li>
-        <li id="li2"><a href="galeri.html">Galeri</a></li>
-        <li id="li2"><a href="#iletisim">İletişim</a></li>
-    </ul>
-
-          <div style="padding:16px; margin-top:30px; height: 750px;">
-
-  <div class="slideshow-container">
-
-          <div class="mySlides fade">
-  
-            <img src="wallpaper.jpg" style="width:100%">
-            <div class="text">Ben Tuba...</div>
-            </div>
-
-            <div class="mySlides fade">
-  
-            <img src="wallpaper.jpg" style="width:100%">
-            <div class="text">hem öğrenciyim...</div>
-            </div>
-
-            <div class="mySlides fade">
-  
-            <img src="wallpaper.jpg" style="width:100%">
-            <div class="text">hem de mühendis adayı.</div>
-            </div>
-
-          </div>
-  </div>
-<br>
-
-            <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            </div>
-
+  <div class="genel">
+        <div class="üst">
+          <ul id="ustcizgi">
+            <li id="li2"><a class="active1" href="index.html">Ana Sayfa</a></li>
+            <li id="li2"><a href="#hakkimda">Hakkımda</a></li>
+            <li id="li2"><a href="galeri.html">Galeri</a></li>
+            <li id="li2"><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
       <div class="orta">
         <div class="sol">
             <img id="profil" src="profil.jpeg" alt="profilfoto">
@@ -117,8 +32,8 @@ img {vertical-align: middle;}
              merakım uyandı. Evet evet henüz bu aşamada değilim yeterli donanıma, bilgiye <br>
               sahip değilim ancak kendimi geliştirmek için burdayım.</p>
         </div>
-
-        
+      </div>
+        <div class="alt">
           <table width="550" class="table">
           
             <tr>
@@ -171,35 +86,14 @@ img {vertical-align: middle;}
                 </ul>
               </td>
             </tr>	
+            <tr>
+              <td>
+                <h3>2021 © Tuba Telli</h3>
+              </td>
+            </tr>
           </table>
-         
-        
-      </div>
-
+        </div>
   </div> <!--genelin kapanışı-->
-     
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
-</script>
-
+  
 </body>
 </html> 
